@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 2</title>
+
+    <!-- 1. Google Font for the main header -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        /* General page styling */
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Blue_sky_over_the_ocean.jpg/1280px-Blue_sky_over_the_ocean.jpg");
+            background-repeat: no-repeat; /* 4. Image displays only once */
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        /* 1. Apply Google Font to h1 only */
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+        }
+
+        /* 3. Square bullets for unordered list */
+        ul {
+            list-style-type: square;
+        }
+
+        /* Dropdown menu container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            background-color: #333;
+            padding: 15px;
+            color: white;
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            color: black;
+            padding: 10px;
+            min-width: 200px;
+        }
+
+        /* Show dropdown on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Small styling improvement */
+        .dropdown-content p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 5. Dropdown Menu -->
+    <div class="dropdown">
+        About Me
+        <div class="dropdown-content">
+            <p>Height: 5'10"</p>
+            <p>Country: United States</p>
+            <p>Job: Student</p>
+            <p>Favorite Color: Blue</p>
+        </div>
+    </div>
+
+    <h1>Welcome to My Page</h1>
+
+    <h2>The 3 Largest US Cities</h2>
+
+    <!-- 2. Reversed ordered list using attributes -->
+    <ol reversed>
+        <li>Chicago</li>
+        <li>Los Angeles</li>
+        <li>New York</li>
+    </ol>
+
+    <h2>Favorite Cities</h2>
+
+    <!-- 3. Square bullets -->
+    <ul>
+        <li>Boston</li>
+        <li>London</li>
+        <li>Tokyo</li>
+    </ul>
+
+</body>
+</html>

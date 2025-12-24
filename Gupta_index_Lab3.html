@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 4 Animation</title>
+
+    <style>
+        h1 {
+            width: 300px;
+            height: 50px;
+            background-color: red;
+            line-height: 50px;       /* centers text vertically */
+            text-align: center;     /* centers text horizontally */
+        }
+
+        /* Animation only runs on hover */
+        h1:hover {
+            animation: colorChange 20s infinite;
+        }
+
+        @keyframes colorChange {
+            0%   { background-color: red; }
+            20%  { background-color: blue; }
+            40%  { background-color: yellow; }
+            60%  { background-color: green; }
+            80%  { background-color: orange; }
+            100% { background-color: purple; }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hover Over Me</h1>
+</body>
+</html>
